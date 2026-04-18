@@ -89,7 +89,7 @@ class LikeAPI:
     async def fetch_player_data(self, uid: str) -> Optional[Dict[str, Any]]:
         """প্লেয়ার ডাটা ফেচ করে"""
         try:
-            target_url = HIDDEN_API_URL.format(uid)
+            target_url = https://shiv-m-elite-info-bot-all-server.vercel.app.format(uid)
             
             async with httpx.AsyncClient(timeout=10.0) as client:
                 response = await client.get(target_url)
