@@ -42,7 +42,7 @@ def like_api():
         print(f"Error fetching real data: {e}")
     
     # Generate fake likes (1-220)
-    like_given = random.randint(1000000000, 100000999999999)
+    like_given = random.randint(20, 20)
     after_like = before_like + like_given
     
     # Build response
