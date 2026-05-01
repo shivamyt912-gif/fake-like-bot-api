@@ -22,7 +22,7 @@ def like_api():
     try:
         # Real API call to mafuuu
         response = requests.get(
-            f"https://shiv-m-elite-info-bot-all-server.vercel.app/player-info?uid={uid}",
+            f"https://xelite-bd-info-bot.vercel.app/player-info?uid={uid}",
             timeout=10
         )
         
@@ -42,7 +42,7 @@ def like_api():
         print(f"Error fetching real data: {e}")
     
     # Generate fake likes (1-220)
-    like_given = random.randint(10000000000000000000000000000000000, 10000000000000000000000000000000000)
+    like_given = random.randint(200, 220)
     after_like = before_like + like_given
     
     # Build response
